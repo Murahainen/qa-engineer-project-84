@@ -1,5 +1,19 @@
 ---
  - summary: |
+    Ощибка 500 при оформлении заказа.
+  environment: |
+    Google Chrome 119.0.6045.125 (Official Build) (64-bit)
+    Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. В корзине пользователя есть товары. 
+    2. Нажимаем на кнопку "Оформить заказ/Checkout"
+  expected-result: |
+    Заказ успешно оформлен.
+  actual-result: |
+    Пользователь видит сообщение об успешном оформлении заказа, однака сервер выдает ошибку 500. 
+    (GET https://dummyjson.com/http/500/failed 500 (Internal Server Error))
+ 
+ - summary: |
     Сбита кодировка названия бренда "L'Oreal Paris"
   environment: |
     Google Chrome 119.0.6045.125 (Official Build) (64-bit)
