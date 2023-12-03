@@ -72,15 +72,15 @@ bugreports:
 
 - summary: |
       На странице товара отсутствует кнопка возврата в каталог.
-    environment: |
+  environment: |
       Google Chrome 119.0.6045.125 (Official Build) (64-bit)
       Windows 10 Pro 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       - Открываем карточку товара.
       - Нажимаем на кнопку продолжения покупок\возврата в каталог. 
-    expected-result: |
+  expected-result: |
       Пользователь вернулся в каталог.
-    actual-result: |
+  actual-result: |
       На странице товара нет кнопки для возврата в каталог.
 
 - summary: |
@@ -88,11 +88,11 @@ bugreports:
     environment: |
       Google Chrome 119.0.6045.125 (Official Build) (64-bit)
       Windows 10 Pro 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
        - Открываем вкладку поиска товара по категории, например - "Smartphones". 
        - Выбираем сброс категории.
        - Выбираем любые товары, используя фильтрацию по бренду, например: "Орро", "Dry Rose", "Golden".
-    expected-result: |
+  expected-result: |
       Отображение на экране карточек товаров выбранных брендов или информации об отсутствии данных товаров.
-    actual-result: |
+  actual-result: |
       Отсутствуют какие-либо видимые результаты поиска. На странице ничего не происходит.
