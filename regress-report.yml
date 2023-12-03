@@ -85,7 +85,7 @@ bugreports:
 
 - summary: |
       Невозможность поиска по бренду после использования фильтрации по категории.
-    environment: |
+  environment: |
       Google Chrome 119.0.6045.125 (Official Build) (64-bit)
       Windows 10 Pro 22H2
   steps-to-reproduce: |
